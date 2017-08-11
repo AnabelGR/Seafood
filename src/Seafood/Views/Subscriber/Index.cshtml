@@ -4,19 +4,23 @@
     ViewData["Title"] = "Son of Cod Seafood Company";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>Subscribe to the newsletter</h2>
-<hr />
+<div class="mui--appbar-height"></div>
+<div class="mui-container-fluid">
+    <br>
+    <h2>Subscribe to the newsletter</h2>
+    <hr />
 
-@using (Html.BeginForm())
-{
-    @Html.LabelFor(model => model.Name)
-    @Html.EditorFor(model => model.Name)
+    @using (Html.BeginForm())
+    {
+        @Html.LabelFor(model => model.Name)
+        @Html.EditorFor(model => model.Name)
 
-    @Html.LabelFor(model => model.Email)
-    @Html.EditorFor(model => model.Email)
+        @Html.LabelFor(model => model.Email)
+        @Html.EditorFor(model => model.Email)
 
 
-    <input type="submit" value="Create" class="btn btn-default" />
-}
+        <input type="submit" value="Create" class="btn btn-default" />
+    }
 
-@Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "Index")
+</div>

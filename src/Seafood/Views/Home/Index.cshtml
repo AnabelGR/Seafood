@@ -1,10 +1,12 @@
 ﻿@model IEnumerable <Seafood.Models.Item>
 
 @{
-    ViewData["Title"] = "Item - Create";
+    ViewData["Title"] = "Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<div class="mui--appbar-height"></div>
+<div class="mui-container-fluid">
+    <br>
     <h2>Fish!</h2>
     <hr />
     <h4>@Html.DisplayNameFor(model => model.Description)</h4>
@@ -14,3 +16,4 @@
             <li>@Html.DisplayFor(modelItem => listItem.Name)</li>
         }
     </ul>
+</div>

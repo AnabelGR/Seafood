@@ -21,7 +21,5 @@ namespace Seafood.Controllers
             var thisItem = db.Items.FirstOrDefault(items => items.ItemId == id);
             return View(thisItem);
         }
-
-
     }
 }

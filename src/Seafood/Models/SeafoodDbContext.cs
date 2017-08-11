@@ -2,14 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Seafood.Models
 {
-    public class SeafoodDbContext : DbContext
+    public class SeafoodDbContext : IdentityDbContext<ApplicationUser>
     {
-        public SeafoodDbContext()
+        public SeafoodDbContext(DbContextOptions options) : base (options)
         { }
+
+        public SeafoodDbContext()
+        {
+        }
 
         public DbSet<Subscriber> Subscribers { get; set; }
         public DbSet<Item> Items { get; set; }
@@ -19,8 +24,6 @@ namespace Seafood.Models
             options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=seafood_scripts;integrated security=True");
         }
 
-        public SeafoodDbContext(DbContextOptions<SeafoodDbContext> options) : base(options)
-        { }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

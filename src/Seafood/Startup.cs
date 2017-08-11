@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Seafood.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Seafood
 {
@@ -30,6 +31,9 @@ namespace Seafood
             services.AddEntityFramework()
                 .AddDbContext<SeafoodDbContext>(options =>
                     options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
+            services.AddIdentity<ApplicationUser, IdentityRole>(options => { options.Password.RequireUppercase = false; options.Password.RequireNonAlphanumeric = false; options.Password.RequiredLength = 0; options.Password.RequireDigit = false; })
+            .AddEntityFrameworkStores<SeafoodDbContext>()
+            .AddDefaultTokenProviders();
 
         }
 
@@ -43,7 +47,7 @@ namespace Seafood
             });
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync("Hello Fish!");
             });
         }
     }
