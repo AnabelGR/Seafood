@@ -15,7 +15,7 @@ namespace Seafood.Controllers
         }
         public IActionResult Create()
         {
-            return View();
+            return RedirectToAction("Index", "SubscriberController");
         }
         [HttpPost]
         public IActionResult Create(Subscriber subscriber)
