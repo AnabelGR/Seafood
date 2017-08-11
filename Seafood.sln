@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Seafood", "src\Seafood\Seafood.xproj", "{D198C7B8-54E4-4D1D-953B-F201C0AE18B3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{05D6963F-46A7-4DCA-BD40-3FBE2BAD879E}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Seafood.Tests", "Seafood.Tests\Seafood.Tests.xproj", "{A18AC4A4-67A2-40B4-8C0A-20B69B0D78E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +26,16 @@ Global
 		{D198C7B8-54E4-4D1D-953B-F201C0AE18B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D198C7B8-54E4-4D1D-953B-F201C0AE18B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D198C7B8-54E4-4D1D-953B-F201C0AE18B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A18AC4A4-67A2-40B4-8C0A-20B69B0D78E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18AC4A4-67A2-40B4-8C0A-20B69B0D78E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18AC4A4-67A2-40B4-8C0A-20B69B0D78E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18AC4A4-67A2-40B4-8C0A-20B69B0D78E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D198C7B8-54E4-4D1D-953B-F201C0AE18B3} = {7C5AE59A-B599-45A1-A28F-B651057B5B9F}
+		{A18AC4A4-67A2-40B4-8C0A-20B69B0D78E0} = {05D6963F-46A7-4DCA-BD40-3FBE2BAD879E}
 	EndGlobalSection
 EndGlobal
