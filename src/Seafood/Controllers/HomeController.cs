@@ -16,10 +16,14 @@ namespace Seafood.Controllers
         {
             return View(db.Items.ToList());
         }
-        public IActionResult ItemDetails(int id)
+        public IActionResult Delivery()
         {
-            var thisItem = db.Items.FirstOrDefault(items => items.ItemId == id);
-            return View(thisItem);
+            return View();
         }
+        public IActionResult About()
+        {
+            return View();
+        }
+
     }
 }

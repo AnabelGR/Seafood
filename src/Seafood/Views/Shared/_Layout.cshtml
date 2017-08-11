@@ -1,15 +1,17 @@
 ﻿<!DOCTYPE html>
 
 <html>
-<head><meta charset="utf-8">
+<head>
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="//cdn.muicss.com/mui-0.9.21/css/mui.min.css" rel="stylesheet" type="text/css" />
 <script src="//cdn.muicss.com/mui-0.9.21/js/mui.min.js"></script>
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="~/js/scripts.js"></script>    
+<script src="~/js/Scripts.js"></script>
+<link href="~/CSS/StyleSheet.min.css" rel="stylesheet" />
 <script src="https://use.fontawesome.com/c3a95916f1.js"></script>
-<link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
 <title>@ViewBag.Title</title>
 </head>
 <body>
@@ -21,16 +23,16 @@
         <li>
             <strong>Explore the Seas</strong>
             <ul>
-                <li>@Html.ActionLink("Subscribe", "Subscribe", "Index")</li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Delivery</a></li>
+                <li>@Html.ActionLink("Subscribe", "Index", "Subscriber")</li>
+                <li>@Html.ActionLink("Delivery", "Delivery")</li>
+                <li>@Html.ActionLink("About Us", "About")</li>
             </ul>
         </li>
         <li>
             <strong>Admin Portal</strong>
             <ul>
-                <li>@Html.ActionLink("Register", "Register")</li>
-                <li><a href="#">Log In</a></li>
+                <li>@Html.ActionLink("Register", "Register", "Account")</li>
+                <li>@Html.ActionLink("Log In", "Login", "Account")</li>
             </ul>
         </li>
     </div>
@@ -44,12 +46,16 @@
         </div>
     </header>
     <div id="content-wrapper">
+        <div class="mui--appbar-height"></div>
+        <div class="mui-container-fluid">
             @RenderBody()
-    </div>
+            </div>
+        </div>
     <footer id="footer">
         <div class="mui-container-fluid">
             <br>
             Made with ♥ by <a href="https://www.muicss.com">MUI</a>
+           <p> @Html.ActionLink("Back to List", "Index", "Home")</p>
         </div>
     </footer>
 </body>

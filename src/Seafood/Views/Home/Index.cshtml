@@ -4,9 +4,16 @@
     ViewData["Title"] = "Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="mui--appbar-height"></div>
-<div class="mui-container-fluid">
-    <br>
+
+    <h2>Son of Cod Fishing Company</h2>
+    <h3>
+        Locally owned. Committed to sustainability and knowing our sources.
+    </h3><p>
+        That's how Flying Fish has operated since we opened in Sandpoint, Idaho in 1979. We're in our seventh year in Portland, with seafood from local fishermen and women, meat from local family farms, and non-local options from only trusted, reputable sources.
+    </p><p>
+        We're happy to be a part of the community at Providore Fine Foods in Northeast Portland.
+    </p>
+<p>Thank you for your support!</p>
     <h2>Fish!</h2>
     <hr />
     <h4>@Html.DisplayNameFor(model => model.Description)</h4>
@@ -16,4 +23,3 @@
             <li>@Html.DisplayFor(modelItem => listItem.Name)</li>
         }
     </ul>
-</div>
