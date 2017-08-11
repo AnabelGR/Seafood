@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Seafood.Models;
-using Microsoft.Extensions.Options;
 
 namespace Seafood.Controllers
 {
