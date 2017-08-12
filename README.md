@@ -22,7 +22,7 @@ If you do not have Visual Studio 2015, download [HERE](https://www.visualstudio.
 
 If you do not have SSMS, download [HERE](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms).
 
-Cloning From GitHub: Download or clone project repository onto desktop from GitHub using this [link](https://github.com/AnabelGR/Seafood.git).
+Cloning From GitHub: Download or clone project repository onto desktop from GitHub using this [link](https://github.com/AnabelGR/Seafood.git). Run ```dotnet restore``` in the top level folder of the project (inside the src folder) to retore packages.
 
 Open the project in Visual Studio.
 
