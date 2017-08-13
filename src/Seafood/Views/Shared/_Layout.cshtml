@@ -9,19 +9,18 @@
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="~/js/Scripts.js"></script>
         <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
-                <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet" />
         <script src="https://use.fontawesome.com/c3a95916f1.js"></script>
         <title>@ViewBag.Title</title>
     </head>
     <body>
         <div id="sidedrawer" class="mui--no-user-select">
             <div id="sidedrawer-brand" class="mui--appbar-line-height">
-                <span class="mui--text-title">Son of Cod Fishing Company</span>
+               <img src="~/images/cod.png" width="175" class="logo" />
             </div>
             <div class="mui-divider"></div>
             <ul>
                 <li>
-                    <strong>Learn about our operations</strong>
+                    <strong>LEARN ABOUT OUR OPERATIONS</strong>
                     <ul>
                         <li class="list-group-item">@Html.ActionLink("Subscribe", "Index", "Subscriber")</li>
                         <li class="list-group-item">@Html.ActionLink("Delivery", "Delivery", "Home")</li>
@@ -29,7 +28,7 @@
                     </ul>
                 </li>
                 <li>
-                    <strong>Admin Portal</strong>
+                    <strong>ADMIN PORTAL</strong>
                     <ul>
                         <li class="list-group-item">@Html.ActionLink("Register", "Register", "Account")</li>
                         <li class="list-group-item">@Html.ActionLink("Log In", "Login", "Account")</li>
@@ -42,21 +41,23 @@
                 <div class="mui-container-fluid">
                     <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
                     <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
-                    <span class="mui--text-title mui--visible-xs-inline-block">Brand.io</span>
+                    <span class="mui--text-title">Son of Cod: For all your seafood needs.</span>
                 </div>
             </div>
         </header>
         <div id="content-wrapper">
             <div class="mui--appbar-height"></div>
             <div class="mui-container-fluid">
+                <br />
+                <img src="~/images/sonofcod.png" width="250" alt="Son of Cod Logo" />
+                <div class="mui-divider"></div>
                 @RenderBody()
             </div>
         </div>
         <footer id="footer">
             <div class="mui-container-fluid">
                 <br>
-                <p>Son of Cod Fishing Company <i class="fa fa-copyright fa-fw" aria-hidden="true"></i>2017   |   @Html.ActionLink("Back to List", "Index", "Home")</p>
-                Made with ♥ by <a href="https://www.muicss.com">MUI</a>
+                <p>Son of Cod Fishing Company <i class="fa fa-copyright fa-fw" aria-hidden="true"></i>2017   | Made with ♥ by <a href="https://www.muicss.com">MUI</a> |   @Html.ActionLink("HOME", "Index", "Home")</p>
             </div>
         </footer>
     </body>

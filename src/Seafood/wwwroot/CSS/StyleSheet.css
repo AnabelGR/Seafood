@@ -16,7 +16,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -2026,8 +2026,8 @@ h4, h5, h6 {
 html,
 body {
   height: 100%;
-  background-color: #7B1FA2;
-  font-family: "Yanone Kaffeesatz", sans-serif; }
+  background-color: #B2DFDB;
+  font-family: "Montserrat", sans-serif; }
 
 html,
 body,
@@ -2035,7 +2035,6 @@ input,
 textarea,
 buttons {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 /**
@@ -2057,7 +2056,7 @@ buttons {
   left: -200px;
   overflow: auto;
   z-index: 2;
-  background-color: #fff;
+  background-color: #004D40;
   transition: transform 0.2s; }
 
 #content-wrapper {
@@ -2070,7 +2069,7 @@ buttons {
   padding-bottom: 160px; }
 
 #footer {
-  height: 160px;
+  height: auto;
   margin-left: 0px;
   transition: margin-left 0.2s; }
 
@@ -2102,32 +2101,34 @@ buttons {
  * Header CSS
  */
 .sidedrawer-toggle {
-  color: #fff;
+  color: #B2DFDB;
   cursor: pointer;
   font-size: 20px;
   line-height: 20px;
   margin-right: 10px; }
 
 .sidedrawer-toggle:hover {
-  color: #fff;
+  color: #FFF59D;
   text-decoration: none; }
 
 /**
  * Footer CSS
  */
 #footer {
-  background-color: #0288D1;
-  color: #fff; }
+  background-color: #004D40;
+  color: #B2DFDB;
+  text-align: right; }
 
-#footer a {
-  color: #fff;
-  text-decoration: underline; }
+#footer p {
+  color: #B2DFDB;
+  text-decoration: none; }
 
 /**
  * Side drawer CSS
  */
 #sidedrawer-brand {
-  padding-left: 20px; }
+  padding-top: 20px;
+  padding-left: 10px; }
 
 #sidedrawer ul {
   list-style: none; }
@@ -2136,7 +2137,7 @@ buttons {
   padding-left: 0px; }
 
 #sidedrawer > ul > li:first-child {
-  padding-top: 15px; }
+  padding-top: 10px; }
 
 #sidedrawer strong {
   display: block;
@@ -2144,8 +2145,12 @@ buttons {
   cursor: pointer; }
 
 #sidedrawer strong:hover {
-  background-color: #E0E0E0; }
+  background-color: #009688; }
 
 #sidedrawer strong + ul > li {
   padding: 6px 0px; }
+
+.mui-appbar {
+  background-color: #009688;
+  color: #B2DFDB; }
 

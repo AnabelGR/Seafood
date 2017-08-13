@@ -1,8 +1,12 @@
 ﻿@import "../../bower_components/mui/src/sass/mui/colors";
 @import "../../bower_components/mui/src/sass/mui";
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-$yanone-sans: 'Yanone Kaffeesatz', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$darkteal: mui-color('teal', '900');
+$midteal: mui-color('teal', '500');
+$lightteal: mui-color('teal', '100');
+$yellow: mui-color('yellow', '200');
 
 /**
  * Body CSS
@@ -10,8 +14,8 @@ $yanone-sans: 'Yanone Kaffeesatz', sans-serif;
 html,
 body {
   height: 100%;
-  background-color: mui-color('purple', '700');
-  font-family: $yanone-sans;
+  background-color: $lightteal;
+  font-family: $montserrat;
 }
 
 html,
@@ -20,7 +24,6 @@ input,
 textarea,
 buttons {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
@@ -45,7 +48,7 @@ buttons {
   left: -200px;
   overflow: auto;
   z-index: 2;
-  background-color: #fff;
+  background-color: $darkteal;
   transition: transform 0.2s;
 }
 
@@ -61,7 +64,7 @@ buttons {
 }
 
 #footer {
-  height: 160px;
+  height: auto;
   margin-left: 0px;
   transition: margin-left 0.2s;
 }
@@ -113,7 +116,7 @@ buttons {
  * Header CSS
  */
 .sidedrawer-toggle {
-  color: #fff;
+  color: $lightteal;
   cursor: pointer;
   font-size: 20px;
   line-height: 20px;
@@ -121,7 +124,7 @@ buttons {
 }
 
 .sidedrawer-toggle:hover {
-  color: #fff;
+  color: $yellow;
   text-decoration: none;
 }
 
@@ -130,20 +133,22 @@ buttons {
  * Footer CSS
  */
 #footer {
-  background-color: #0288D1;
-  color: #fff;
+  background-color: $darkteal;
+  color: $lightteal;
+  text-align: right;
 }
 
-#footer a {
-  color: #fff;
-  text-decoration: underline;
+#footer p {
+  color: $lightteal;
+  text-decoration: none;
 }
 
 /**
  * Side drawer CSS
  */
 #sidedrawer-brand {
-  padding-left: 20px;
+    padding-top: 20px;
+  padding-left: 10px;
 }
 
 #sidedrawer ul {
@@ -155,7 +160,7 @@ buttons {
 }
 
 #sidedrawer > ul > li:first-child {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 #sidedrawer strong {
@@ -165,9 +170,14 @@ buttons {
 }
 
 #sidedrawer strong:hover {
-  background-color: #E0E0E0;
+  background-color: $midteal;
 }
 
 #sidedrawer strong + ul > li {
   padding: 6px 0px;
+}
+
+.mui-appbar {
+      background-color: $midteal;
+      color: $lightteal;
 }
