@@ -5,18 +5,24 @@
 
 @using Seafood.ViewModels
 @model RegisterViewModel
+<div class="mui-panel">
     <h2>Register a new user</h2>
     <hr />
     @using (Html.BeginForm("Register", "Account", FormMethod.Post))
     {
-        @Html.LabelFor(m => m.Email)
-        @Html.TextBoxFor(m => m.Email)
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email)
+        </p>
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password)
+        </p>
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(m => m.ConfirmPassword)
+            @Html.PasswordFor(m => m.ConfirmPassword)
+        </p>
 
-        @Html.LabelFor(m => m.Password)
-        @Html.PasswordFor(m => m.Password)
-
-        @Html.LabelFor(m => m.ConfirmPassword)
-        @Html.PasswordFor(m => m.ConfirmPassword)
-
-        <input type="submit" value="Register" />
+        <p class="mui--text-button mui--text-center"><input type="submit" value="REGISTER" /></p>
     }
+    </div>

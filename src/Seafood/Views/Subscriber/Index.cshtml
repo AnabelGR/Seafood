@@ -4,22 +4,24 @@
     ViewData["Title"] = "Newsletter Sign Up";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="mui--appbar-height"></div>
-<div class="mui-container-fluid">
+
+    <div class="mui-panel">
     <br>
     <h2>Subscribe to the newsletter</h2>
     <hr />
 
     @using (Html.BeginForm())
     {
-        @Html.LabelFor(model => model.Name)
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Name)
         @Html.EditorFor(model => model.Name)
-
+        </p>
+        <p class="mui-textfield mui-textfield--float-label">
         @Html.LabelFor(model => model.Email)
         @Html.EditorFor(model => model.Email)
+        </p>
 
-
-        <input type="submit" value="Join" class="btn btn-default" />
+        <p class="mui--text-button mui--text-center"><input type="submit" value="JOIN" class="btn btn-default" /></p>
     }
-    <p>Thank you!</p>
-</div>
+    </div>
+<div><p class="mui--text-center">Thank you!</p></div>

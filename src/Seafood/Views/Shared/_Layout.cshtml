@@ -14,8 +14,8 @@
     </head>
     <body>
         <div id="sidedrawer" class="mui--no-user-select">
-            <div id="sidedrawer-brand" class="mui--appbar-line-height">
-               <img src="~/images/cod.png" width="175" class="logo" />
+            <div id="sidedrawer-brand" class="mui--appbar-line-height" >
+               <a href="index"><img src="~/images/cod.png" width="175" class="logo" /></a>
             </div>
             <div class="mui-divider"></div>
             <ul>
@@ -49,8 +49,10 @@
             <div class="mui--appbar-height"></div>
             <div class="mui-container-fluid">
                 <br />
-                <img src="~/images/sonofcod.png" width="250" alt="Son of Cod Logo" />
-                <div class="mui-divider"></div>
+                <div class="mui--text-right">
+                    <img src="~/images/sonofcod.png" width="250" alt="Son of Cod Logo" />
+                    <div class="mui-divider"></div>
+                </div>
                 @RenderBody()
             </div>
         </div>
