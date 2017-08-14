@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Seafood.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Seafood.Controllers
 {
@@ -24,6 +25,7 @@ namespace Seafood.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
         public IActionResult Edit(int id)
         {
             var thisSubscriber = db.Subscribers.FirstOrDefault(subscribers => subscribers.SubscriberId == id);

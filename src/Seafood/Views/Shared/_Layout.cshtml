@@ -13,9 +13,10 @@
         <title>@ViewBag.Title</title>
     </head>
     <body>
-        <div id="sidedrawer" class="mui--no-user-select">
-            <div id="sidedrawer-brand" class="mui--appbar-line-height" >
-               <a href="index"><img src="~/images/cod.png" width="175" class="logo" /></a>
+        <div id="sidedrawer">
+            <div id="sidedrawer-brand"  >
+                <img src="~/images/cod.png" width="185" />
+                <p class="mui--text-center"> @Html.ActionLink("HOME", "Index", "Home") </p>
             </div>
             <div class="mui-divider"></div>
             <ul>
@@ -25,6 +26,7 @@
                         <li class="list-group-item">@Html.ActionLink("Sign Up for our Newsletter", "Index", "Subscriber")</li>
                         <li class="list-group-item">@Html.ActionLink("Delivery", "Delivery", "Home")</li>
                         <li class="list-group-item">@Html.ActionLink("About Us", "About", "Home")</li>
+                        <li class="list-group-item">@Html.ActionLink("Products", "Index", "Home")</li>
                     </ul>
                 </li>
                 <li>

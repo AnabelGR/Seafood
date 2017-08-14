@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Seafood.Models;
 using System.Threading.Tasks;
 using Seafood.ViewModels;
+using Seafood.Models;
 
 namespace Seafood.Controllers
 {
@@ -36,7 +37,7 @@ namespace Seafood.Controllers
             IdentityResult result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Account");
             }
             else
             {
@@ -55,7 +56,7 @@ namespace Seafood.Controllers
             Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, isPersistent: true, lockoutOnFailure: false);
             if (result.Succeeded)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Account");
             }
             else
             {

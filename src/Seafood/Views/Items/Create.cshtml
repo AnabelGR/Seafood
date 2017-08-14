@@ -1,0 +1,34 @@
+﻿@{
+        ViewData["Title"] = "Add Product";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    @model Seafood.Models.Item
+
+<div class="mui-panel">
+    <h2>Add a Product</h2>
+    <div class="mui-divider"></div>
+    <h4>Add a new product</h4>
+    @using (Html.BeginForm())
+    {
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Name)
+            @Html.TextBoxFor(model => model.Name)
+        </p>
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Description)
+            @Html.TextBoxFor(model => model.Description)
+        </p>
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Origin)
+            @Html.TextBoxFor(model => model.Origin)
+        </p>
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Price)
+            @Html.TextBoxFor(model => model.Price)
+            </p>
+
+<p class="mui--text-center">
+            <input type="submit" value="Add new location" /></p>
+     }
+</div>

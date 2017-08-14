@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Edit Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Seafood.Models.Item
+<div class="mui-panel">
+    <h2>Edit</h2>
+    <hr />
+    <h4>Edit this product: @Html.DisplayFor(model => model.Name)</h4>
+
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.ItemId)
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Name)
+            @Html.EditorFor(model => model.Name)
+        </p>
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Description)
+            @Html.EditorFor(model => model.Description)
+        </p>
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Origin)
+            @Html.EditorFor(model => model.Origin)
+        </p>
+        <p class="mui-textfield mui-textfield--float-label">
+            @Html.LabelFor(model => model.Price)
+            @Html.EditorFor(model => model.Price)
+        </p>
+        <p class="mui--text-center">
+            <input type="submit" value="Save" /></p>
+            }
+</div>

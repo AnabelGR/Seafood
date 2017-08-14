@@ -2027,6 +2027,9 @@ html,
 body {
   height: 100%;
   background-color: #B2DFDB;
+  background-image: url("../images/bckgrnd.jpg") !important;
+  background-position: center !important;
+  background-size: cover !important;
   font-family: "Montserrat", sans-serif; }
 
 html,
