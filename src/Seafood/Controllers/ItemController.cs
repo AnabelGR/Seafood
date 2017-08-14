@@ -15,11 +15,13 @@ namespace Seafood.Controllers
         {
             return View();
         }
-        public IActionResult ItemDetails(int id)
+
+        public IActionResult Detail(int id)
         {
             var thisItem = db.Items.FirstOrDefault(items => items.ItemId == id);
             return View(thisItem);
         }
+
         public IActionResult Create()
         {
             return View();
@@ -31,6 +33,7 @@ namespace Seafood.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
         public IActionResult Edit(int id)
         {
             var thisItem = db.Items.FirstOrDefault(items => items.ItemId == id);
@@ -48,6 +51,7 @@ namespace Seafood.Controllers
             var thisItem = db.Items.FirstOrDefault(items => items.ItemId == id);
             return View(thisItem);
         }
+
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)
         {

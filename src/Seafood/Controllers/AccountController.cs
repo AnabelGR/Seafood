@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Identity;
 using Seafood.Models;
 using System.Threading.Tasks;
 using Seafood.ViewModels;
-using Seafood.Models;
 
 namespace Seafood.Controllers
 {

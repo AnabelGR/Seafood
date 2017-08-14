@@ -38,6 +38,11 @@ dotnet ef database update
 5. Open seafood_scripts.sql in SSMS and execute (this will add sample data).
 6. Back in Visual Studio, click 'IIS Express' at the top of the window. Project will open in a new localhost window on your default browser.
 
+## Screenshots
+![Index](wwwroot/screenshots/index.JPG)
+![Side Menu Open](wwwroot/screenshots/side_menu-open.JPG)
+![Newsletter](wwwroot/screenshots/newsletter.JPG)
+
 ## Support and contact details
 
 If you have any issues or have questions, ideas, concerns, or contributions please contact the contributor through Github.

@@ -24,6 +24,5 @@ namespace Seafood.Controllers
         {
             return View();
         }
-
     }
 }
