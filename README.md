@@ -1,4 +1,4 @@
-﻿# Son of Cod Seafood
+﻿﻿# Son of Cod Seafood
 #### An Epicodus Friday independent project in .NET/Visual Studio 2015 with xUnit testing, 08.11.17
 
 #### **By Anabel Ramirez**
@@ -22,7 +22,7 @@ If you do not have Visual Studio 2015, download [HERE](https://www.visualstudio.
 
 If you do not have SSMS, download [HERE](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms).
 
-Cloning From GitHub: Download or clone project repository onto desktop from GitHub using this [link](https://github.com/AnabelGR/Seafood.git). Run ```dotnet restore``` in the top level folder of the project (inside the src folder) to retore packages.
+Cloning From GitHub: Download or clone project repository onto desktop from GitHub using this [link](https://github.com/AnabelGR/Seafood.git).
 
 Open the project in Visual Studio.
 
@@ -37,6 +37,11 @@ dotnet ef database update
 ```
 5. Open seafood_scripts.sql in SSMS and execute (this will add sample data).
 6. Back in Visual Studio, click 'IIS Express' at the top of the window. Project will open in a new localhost window on your default browser.
+
+## Screenshots
+![Index](wwwroot/screenshots/index.JPG)
+![Side Menu Open](wwwroot/screenshots/side_menu-open.JPG)
+![Newsletter](wwwroot/screenshots/newsletter.JPG)
 
 ## Support and contact details
 
