@@ -39,9 +39,9 @@ dotnet ef database update
 6. Back in Visual Studio, click 'IIS Express' at the top of the window. Project will open in a new localhost window on your default browser.
 
 ## Screenshots
-![Index](wwwroot/screenshots/index.JPG)
-![Side Menu Open](wwwroot/screenshots/side_menu-open.JPG)
-![Newsletter](wwwroot/screenshots/newsletter.JPG)
+![Index](screenshots\index.JPG)
+![Side Menu Open](screenshots/side_menu-open.JPG)
+![Newsletter](screenshots/newsletter.JPG)
 
 ## Support and contact details
 
