@@ -4,7 +4,7 @@
     ViewData["Title"] = "Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="left-section">
+<div class="mui-panel">
     <h2>Son of Cod Fishing Company</h2>
     <h3>
         Locally owned. Committed to sustainability and knowing our sources.
@@ -15,14 +15,12 @@
     </p>
     <p>Thank you for your support!</p>
 </div>
-<div class="right-section">
-    <h2>Fish!</h2>
-
-    <h4>Fresh Fish in Today!</h4>
+<div class="mui-panel">
+    <h2>Check out what's been caught today!</h2>
     <ul>
         @foreach (var listItem in Model)
         {
             <li>@Html.DisplayFor(modelItem => listItem.Name)</li>
         }
     </ul>
-    </div>
+</div>

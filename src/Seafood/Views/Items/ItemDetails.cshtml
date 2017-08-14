@@ -1,12 +1,14 @@
 ﻿@model Seafood.Models.Item
 
 @{
-    ViewData["Title"] = "Item - Details";
+    ViewData["Title"] = "FIsh - Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div class="mui-panel">
     <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name) Details</h3>
     <hr />
 
     <p>@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</p>
     <p>@Html.DisplayNameFor(model => model.Origin) : @Html.DisplayFor(model => model.Origin)</p>
     <p>@Html.DisplayNameFor(model => model.Price): @Html.DisplayFor(model => model.Price)</p>
+</div>

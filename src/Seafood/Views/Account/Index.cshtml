@@ -4,6 +4,8 @@
 }
 
 @using System.Security.Claims
+ 
+<div class="mui-panel">
     <h2>Register or log in to view the admin side.</h2>
     <hr />
     @if (User.Identity.IsAuthenticated)
@@ -19,3 +21,4 @@
         <p>@Html.ActionLink("Register", "Register")</p>
         <p>@Html.ActionLink("Log in", "Login")</p>
     }
+</div>
