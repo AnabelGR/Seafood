@@ -6,13 +6,13 @@ using Xunit;
 
 namespace Seafood.Tests.ControllerTests
 {
-    public class SubscriberControllerTest
+    public class ItemControllerTest
     {
         [Fact]
         public void Get_ViewResult_Index_Test()
         {
             //Arrange
-            SubscriberController controller = new SubscriberController();
+            ItemController controller = new ItemController();
 
             //Act
             var result = controller.Index();

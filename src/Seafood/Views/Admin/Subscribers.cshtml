@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Mailing List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using System.Security.Claims
+@model IEnumerable<Seafood.Models.Subscriber>
+
+<div class="mui-panel">
+    <h2>Mailing list</h2>
+    <hr />
+    @if (User.Identity.IsAuthenticated)
+    {
+        <ul>
+            @foreach (var subscriber in Model)
+            {
+                <li>@subscriber.Name - Email: @subscriber.Email</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>@Html.ActionLink("Register", "Register")</p>
+        <p>@Html.ActionLink("Log in", "Login")</p>
+    }
+</div>
