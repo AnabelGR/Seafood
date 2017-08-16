@@ -7,10 +7,13 @@
 
 <div class="mui-panel">
     <h2>Check out what's been caught today!</h2>
-    <div class="mui-row">
+    <div class="mui-divider"></div>
+    <div class="mui-panel">
         @foreach (var listItem in Model)
         {
-            <div class="mui-col-sm-3 mui-panel"><p>@Html.DisplayFor(modelItem => listItem.Name)</p></div>
+            <ul class="mui-list--inline">
+                <li>@Html.DisplayFor(modelItem => listItem.Name) | @Html.ActionLink("Details", "Detail", "Item")</li>
+            </ul>
         }
     </div>
 </div>

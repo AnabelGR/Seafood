@@ -1,27 +1,10 @@
 ﻿@model Seafood.Models.Subscriber
 
 @{
-    ViewData["Title"] = "Newsletter Sign Up";
+    ViewData["Title"] = "Newsletter";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
     <div class="mui-panel">
-    <br>
     <h2>Subscribe to the newsletter</h2>
-    <hr />
-
-    @using (Html.BeginForm())
-    {
-        <p class="mui-textfield mui-textfield--float-label">
-            @Html.LabelFor(model => model.Name)
-        @Html.EditorFor(model => model.Name)
-        </p>
-        <p class="mui-textfield mui-textfield--float-label">
-        @Html.LabelFor(model => model.Email)
-        @Html.EditorFor(model => model.Email)
-        </p>
-
-        <p class="mui--text-button mui--text-center"><input type="submit" value="JOIN" class="btn btn-default" /></p>
-    }
-        <div><p class="mui--text-center">Thank you!</p></div>
     </div>

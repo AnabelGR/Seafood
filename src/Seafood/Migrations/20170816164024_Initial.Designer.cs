@@ -8,8 +8,8 @@ using Seafood.Models;
 namespace Seafood.Migrations
 {
     [DbContext(typeof(SeafoodDbContext))]
-    [Migration("20170811213619_AddAuthentication")]
-    partial class AddAuthentication
+    [Migration("20170816164024_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -196,9 +196,11 @@ namespace Seafood.Migrations
                     b.Property<int>("SubscriberId")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Email");
+                    b.Property<string>("Email")
+                        .IsRequired();
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired();
 
                     b.HasKey("SubscriberId");
 

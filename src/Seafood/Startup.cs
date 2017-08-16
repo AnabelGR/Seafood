@@ -37,9 +37,15 @@ namespace Seafood
 
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddConsole();
 
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            app.UseIdentity();
             app.UseStaticFiles();
             app.UseMvc(routes =>
             {
@@ -48,6 +54,10 @@ namespace Seafood
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Where are the fish?!");
+            });
         }
     }
 }

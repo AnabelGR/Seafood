@@ -138,10 +138,6 @@ buttons {
   background-color: $darkteal;
   color: $lightteal;
   text-align: right;
-}
-
-#footer p {
-  color: $lightteal;
   text-decoration: none;
 }
 
@@ -172,7 +168,7 @@ buttons {
 }
 
 #sidedrawer strong:hover {
-  background-color: $midteal;
+  background-color: $yellow;
 }
 
 #sidedrawer strong + ul > li {
@@ -180,6 +176,6 @@ buttons {
 }
 
 .mui-appbar {
-      background-color: $midteal;
+      background-color: $darkteal;
       color: $lightteal;
 }
