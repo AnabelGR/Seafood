@@ -26,15 +26,11 @@
                         <li class="list-group-item">@Html.ActionLink("Sign Up for our Newsletter", "Index", "Subscriber")</li>
                         <li class="list-group-item">@Html.ActionLink("Delivery", "Delivery", "Home")</li>
                         <li class="list-group-item">@Html.ActionLink("About Us", "About", "Home")</li>
-                        <li class="list-group-item">@Html.ActionLink("Items", "Index", "Item")</li>
+                        <li class="list-group-item">@Html.ActionLink("Products", "Index", "Item")</li>
                     </ul>
                 </li>
                 <li>
-                    <strong>ADMIN PORTAL</strong>
-                    <ul>
-                        <li class="list-group-item">@Html.ActionLink("Register", "Register", "Account")</li>
-                        <li class="list-group-item">@Html.ActionLink("Log In", "Login", "Account")</li>
-                    </ul>
+                    <strong>@Html.ActionLink("ADMIN PORTAL", "Index", "Account")</strong>
                 </li>
             </ul>
         </div>
