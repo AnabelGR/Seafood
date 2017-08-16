@@ -1,6 +1,4 @@
-﻿@model IEnumerable <Seafood.Models.Item>
-
-@{
+﻿@{
     ViewData["Title"] = "Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -14,13 +12,4 @@
         We're happy to be a part of the community at Providore Fine Foods in Northeast Portland.
     </p>
     <p>Thank you for your support!</p>
-</div>
-<div class="mui-panel">
-    <h2>Check out what's been caught today!</h2>
-    <ul>
-        @foreach (var listItem in Model)
-        {
-            <li>@Html.DisplayFor(modelItem => listItem.Name)</li>
-        }
-    </ul>
 </div>

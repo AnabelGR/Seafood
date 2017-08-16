@@ -1,19 +1,17 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Seafood.Models;
-using Microsoft.Extensions.Options;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Seafood.Controllers
 {
     public class ItemController : Controller
     {
         private SeafoodDbContext db = new SeafoodDbContext();
+
         public IActionResult Index()
         {
-            return View();
+            return View(db.Items.ToList());
         }
 
         public IActionResult Detail(int id)
